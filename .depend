@@ -1,0 +1,14 @@
+part1.cmo : test.cmo regexp.cmo dfa.cmo
+part1.cmx : test.cmx regexp.cmx dfa.cmx
+wregexp.cmo : regexp.cmo
+wregexp.cmx : regexp.cmx
+part2.cmo : test.cmo regexp.cmo dfa.cmo
+part2.cmx : test.cmx regexp.cmx dfa.cmx
+part3.cmo : wregexp.cmo test.cmo regexp.cmo
+part3.cmx : wregexp.cmx test.cmx regexp.cmx
+regexp.cmo :
+regexp.cmx :
+test.cmo : regexp.cmo
+test.cmx : regexp.cmx
+dfa.cmo : regexp.cmo
+dfa.cmx : regexp.cmx
